@@ -5,12 +5,16 @@
 <?import javafx.scene.layout.VBox?>
 
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.javafxapplication_section18javafx.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.RadioButton?>
+<GridPane alignment="CENTER" xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.example.javafxapplication_section18javafx.HelloController"
+          stylesheets="@styles.css">
+    <Button text="Button One" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+    <Button text="Button Two" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+    <Button id="button_three" text="Button Three" GridPane.rowIndex="0" GridPane.columnIndex="2"/>
+    <Button text="Button Four" GridPane.rowIndex="0" GridPane.columnIndex="3"/>
+    <Button text="Button Five" GridPane.rowIndex="0" GridPane.columnIndex="4"/>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+    <RadioButton text="Choice 1" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+</GridPane>
